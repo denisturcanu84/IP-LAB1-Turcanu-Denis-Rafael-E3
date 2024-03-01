@@ -39,8 +39,8 @@ int main() {
 	cuptor1.setTemperature(250);
 	cout << cuptor1.getTemperature() << endl;
 	Centrala centrala1;
-	centrala1.setBrand = "Bosch";
+	centrala1.setBrand("Bosch");
 	centrala1.setTemperature(50);
-	cout << centrala1.getBrand << centrala1.getTemperature << endl; 
+	cout << centrala1.getBrand() << centrala1.getTemperature() << endl;
 
 }
