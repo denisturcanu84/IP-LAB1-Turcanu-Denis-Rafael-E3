@@ -20,16 +20,16 @@ public:
 	}
 };
 
-class Centrala : public Cuptor {
+class Centrala : public Heating {
 private:
 	string brand = "Unknown";
 public:
-	int getBrand() {
-		return Brand;
+	string getBrand() {
+		return brand;
 	}
-	void setBrand()
+	void setBrand(string B)
 	{
-
+		brand = B;
 	}
 };
 
@@ -37,6 +37,10 @@ public:
 int main() {
 	Heating cuptor1;
 	cuptor1.setTemperature(250);
-	cout << cuptor1.getTemperature();
+	cout << cuptor1.getTemperature() << endl;
+	Centrala centrala1;
+	centrala1.setBrand = "Bosch";
+	centrala1.setTemperature(50);
+	cout << centrala1.getBrand << centrala1.getTemperature << endl; 
 
 }
